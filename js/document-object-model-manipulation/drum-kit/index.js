@@ -30,7 +30,6 @@ function makeSound(buttonInnerHTML) {
   switch (buttonInnerHTML) {
     case "w":
       var tom1 = new Audio("./sounds/tom-1.mp3");
-      console.log(buttonInnerHTML);
       tom1.play();
       break;
 

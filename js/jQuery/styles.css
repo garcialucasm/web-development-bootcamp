@@ -1,0 +1,16 @@
+.titleBox {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  font-size: 2rem;
+}
+
+.buttonsBox {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+
+button {
+    margin: 20px;
+}
