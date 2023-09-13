@@ -28,22 +28,22 @@ document.addEventListener("keydown", function (event) {
 // Define the makeSound function to play different sounds based on the provided buttonInnerHTML.
 function makeSound(buttonInnerHTML) {
   switch (buttonInnerHTML) {
-    case "w":
+    case "a":
       var tom1 = new Audio("./sounds/tom-1.mp3");
       tom1.play();
       break;
 
-    case "a":
+    case "s":
       var tom2 = new Audio("./sounds/tom-2.mp3");
       tom2.play();
       break;
 
-    case "s":
+    case "d":
       var tom3 = new Audio("./sounds/tom-3.mp3");
       tom3.play();
       break;
 
-    case "d":
+    case "f":
       var tom4 = new Audio("./sounds/tom-4.mp3");
       tom4.play();
       break;
