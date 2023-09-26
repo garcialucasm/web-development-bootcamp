@@ -9,7 +9,7 @@ const yourUsername = "asdsasad12";
 const yourPassword = "sadsad2e213";
 const yourAPIKey = "400afe32-78be-4bd4-a901-449bca471c00";
 const yourBearerToken = "f359d859-f69d-4782-a66e-c1a7ef36bb88";
-const configBearer = {
+const config = {
   headers: { Authorization: `Bearer ${yourBearerToken}` },
 };
 
@@ -79,7 +79,7 @@ app.get("/bearerToken", async (req, res) => {
   // https://stackoverflow.com/a/52645402
 
   try {
-    const response = await axios.get(API_URL + "/secrets/42", configBearer);
+    const response = await axios.get(API_URL + "/secrets/42", config);
     res.render("index.ejs", { content: JSON.stringify(response.data) });
   } catch (error) {
     console.log(error);
