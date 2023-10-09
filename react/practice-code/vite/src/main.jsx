@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import AppCards from "./components/App.jsx"
+import AppCards from "./components/Cards/App.jsx"
 import TestNameImported from "./TestNameFile.jsx";
 import Footer from "./footer.jsx";
 import "./index.css";
