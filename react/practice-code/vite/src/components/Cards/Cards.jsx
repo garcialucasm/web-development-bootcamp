@@ -1,8 +1,9 @@
+import PropTypes from "prop-types";
 import Avatar from "./Avatar";
-import Button from "../Button";
+import Button from "../VoteButton/Button";
 import Detail from "./Detail";
 
-function cards(props) {
+function Cards(props) {
   return (
     <div className="card">
       <div className="top">
@@ -19,4 +20,14 @@ function cards(props) {
   );
 }
 
-export default cards;
+Cards.propTypes = {
+  id: PropTypes.number,
+  name: PropTypes.string,
+  img: PropTypes.string,
+  phone: PropTypes.string,
+  email: PropTypes.string,
+  buttonText: PropTypes.string,
+  buttonURL: PropTypes.string,
+};
+
+export default Cards;
