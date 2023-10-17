@@ -1,14 +1,12 @@
 import { useState } from "react";
 function Time() {
-  setInterval(updateTime, 1000);
-  let now = new Date().toLocaleTimeString();
-
-  const [time, setTime] = useState(now);
+  const [time, setTime] = useState("");
 
   function updateTime() {
     const currentTime = new Date().toLocaleTimeString();
     setTime(currentTime);
   }
+  setInterval(updateTime, 1000);
 
   return <h1>{time}</h1>;
 }
